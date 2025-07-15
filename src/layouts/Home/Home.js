@@ -1,24 +1,21 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
-import { Profile } from 'layouts/Home/Profile';
+import { ProfileWithResume } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
+import liveapp from '../../assets/liveapp.jpg';
+import campus from '../../assets/campus.jpg';
+import bakongApp from '../../assets/bakong.jpg';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = [
+  'Passionate',
+  'Innovative',
+  'Architect',
+  'Mentor',
+  'Leader'
+];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,9 +65,9 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="iOS Developer"
+        description="Design portfolio of kosal pen — a iOS developer working on mobile
+          apps with a focus on performance, experience, and accessibility."
       />
       <Intro
         id="intro"
@@ -83,72 +80,44 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
-        model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: [sprTexture, sprTextureLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
+        title="Live. by Wonderpass"
+        description="A super app for events, ticketing, and digital experiences. Architected core features as reusable SwiftUI modules, and led a team to deliver seamless cross-platform experiences."
+        buttonText="View on App Store"
+        buttonLink="https://apps.apple.com/kh/app/live-by-wonderpass/id1561469242"
+        image={liveapp}
+        imageAlt="Live. by Wonderpass app screenshot"
       />
       <ProjectSummary
         id="project-2"
-        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
+        title="Campus App"
+        description="A modern campus management and student engagement platform. Supporting real-time notifications, event management, and seamless integrations."
+        buttonText="View project"
+        buttonLink="https://campus.wonderpass.asia"
+        alternate
+        image={campus}
+        imageAlt="Campus App screenshot"
       />
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Bakong Mini Service"
+        description="A cross-platform payment and mini service solution, integrating Bakong, Wing Bank, and more. Led backend and mobile teams, managed CI/CD, and engineered MongoDB sync workflows."
         buttonText="View project"
-        buttonLink="/projects/slice"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [sliceTexture, sliceTextureLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
+        buttonLink="https://apps.apple.com/kh/app/bakong/id1440829141"
+        image={bakongApp}
+        imageAlt="Bakong Mini Service screenshot"
       />
-      <Profile
+      <ProfileWithResume
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
         id="details"
       />
-      <Footer />
+      <Footer/>
     </div>
   );
 };

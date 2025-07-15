@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: var(--space2XL);
+  padding-bottom: var(--space2XL);
 
   @media (--mediaDesktop) {
     margin: var(--space2XL) 0;
@@ -16,11 +18,15 @@
   @media (--mediaTablet) {
     height: auto;
     margin: var(--space3XL) 0;
+    padding-top: var(--spaceXL);
+    padding-bottom: var(--spaceXL);
   }
 
   @media (--mediaMobile) {
     padding-bottom: var(--space4XL);
     margin-bottom: 0;
+    padding-top: var(--spaceL);
+    padding-bottom: var(--spaceL);
   }
 
   &[data-first='true'] {

@@ -65,19 +65,19 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
             <DisplacementSphere />
             <header className={styles.text}>
               <h1 className={styles.name} data-visible={visible} id={titleId}>
-                <DecoderText text="Hamish Williams" delay={300} />
+                <DecoderText text="Kosal PEN" delay={300} />
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
-                <VisuallyHidden className={styles.label}>
-                  {`Designer + ${introLabel}`}
-                </VisuallyHidden>
+                {/* <VisuallyHidden className={styles.label}>
+                  {`iOS Developer + ${introLabel}`}
+                </VisuallyHidden> */}
                 <span aria-hidden className={styles.row}>
                   <span
                     className={styles.word}
                     data-status={status}
                     style={cssProps({ delay: tokens.base.durationXS })}
                   >
-                    Designer
+                    iOS Developer
                   </span>
                   <span className={styles.line} data-status={status} />
                 </span>
