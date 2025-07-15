@@ -2,10 +2,10 @@ module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
-  output: 'export',
   images: {
     unoptimized: true, // required for `next export` if using next/image
   },
+  output: 'export',
   webpack(config, { isServer }) {
     // Run custom scripts
     if (isServer) {
