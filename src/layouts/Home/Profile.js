@@ -14,12 +14,6 @@ import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
 import { useTheme } from 'components/ThemeProvider';
-import { WEBGL } from 'three/examples/jsm/capabilities/WebGL.js';
-
-if (!WEBGL.isWebGLAvailable()) {
-  // Show a fallback message or image
-  // For React, you might render a <div> with a message instead
-}
 
 const ProfileText = ({ visible, titleId }) => (
   <>
