@@ -74,7 +74,6 @@ export const Carousel = ({ width, height, images, placeholder, ...rest }) => {
       antialias: false,
       alpha: true,
       powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
     });
     camera.current = new OrthographicCamera(...cameraOptions);
     scene.current = new Scene();

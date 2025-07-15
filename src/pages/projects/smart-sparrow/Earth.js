@@ -196,7 +196,6 @@ export const Earth = ({
       antialias: false,
       alpha: true,
       powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
     });
     renderer.current.setPixelRatio(1);
     renderer.current.outputEncoding = sRGBEncoding;
