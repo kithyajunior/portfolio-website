@@ -18,7 +18,7 @@ import {
   sRGBEncoding,
 } from 'three';
 import { media, rgbToThreeColor } from 'utils/style';
-import { cleanRenderer, cleanScene, removeLights } from 'utils/three';
+import { cleanRenderer, cleanScene, removeLights, isWebGLAvailable } from 'utils/three';
 import styles from './DisplacementSphere.module.css';
 import fragShader from './displacementSphereFragment.glsl';
 import vertShader from './displacementSphereVertex.glsl';
@@ -50,6 +50,11 @@ export const DisplacementSphere = props => {
   const rotationY = useSpring(0, springConfig);
 
   useEffect(() => {
+    if (!isWebGLAvailable()) {
+      console.warn('WebGL not supported');
+      return;
+    }
+
     const { innerWidth, innerHeight } = window;
     mouse.current = new Vector2(0.8, 0.5);
     renderer.current = new WebGLRenderer({
