@@ -36,6 +36,7 @@ import {
   modelLoader,
   removeLights,
   textureLoader,
+  isWebGLAvailable,
 } from 'utils/three';
 import styles from './Model.module.css';
 import { ModelAnimationType } from './deviceModels';
@@ -87,6 +88,11 @@ export const Model = ({
   const rotationY = useSpring(0, rotationSpringConfig);
 
   useEffect(() => {
+    if (!isWebGLAvailable()) {
+      console.warn('WebGL not supported');
+      return;
+    }
+
     const { clientWidth, clientHeight } = container.current;
 
     renderer.current = new WebGLRenderer({

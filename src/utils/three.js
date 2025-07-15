@@ -16,6 +16,23 @@ export const modelLoader = gltfLoader;
 export const textureLoader = new TextureLoader();
 
 /**
+ * Detect if WebGL is supported in the current environment
+ */
+export const isWebGLAvailable = () => {
+  if (typeof window === 'undefined') return false;
+
+  try {
+    const canvas = document.createElement('canvas');
+    return !!(
+      canvas.getContext('webgl') ||
+      canvas.getContext('experimental-webgl')
+    );
+  } catch {
+    return false;
+  }
+};
+
+/**
  * Clean up a scene's materials and geometry
  */
 export const cleanScene = scene => {
