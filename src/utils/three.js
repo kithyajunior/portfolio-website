@@ -23,10 +23,16 @@ export const isWebGLAvailable = () => {
 
   try {
     const canvas = document.createElement('canvas');
-    return !!(
+    const gl =
       canvas.getContext('webgl') ||
-      canvas.getContext('experimental-webgl')
-    );
+      canvas.getContext('experimental-webgl');
+
+    if (!gl) return false;
+
+    const loseContext = gl.getExtension('WEBGL_lose_context');
+    loseContext?.loseContext();
+
+    return true;
   } catch {
     return false;
   }
@@ -72,7 +78,9 @@ export const cleanMaterial = material => {
  * Clean up and dispose of a renderer
  */
 export const cleanRenderer = renderer => {
+  if (!renderer) return;
   renderer.dispose();
+  renderer.forceContextLoss?.();
   renderer = null;
 };
 
