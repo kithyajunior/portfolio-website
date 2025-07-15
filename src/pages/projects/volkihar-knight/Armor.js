@@ -63,7 +63,6 @@ export const Armor = ({
       alpha: true,
       antialias: false,
       powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
     });
 
     renderer.current.setPixelRatio(2);
