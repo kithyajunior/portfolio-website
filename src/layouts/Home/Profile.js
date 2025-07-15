@@ -14,6 +14,14 @@ import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
 import { useTheme } from 'components/ThemeProvider';
+import { WEBGL } from 'three/examples/jsm/WebGL.js';
+
+if (WEBGL.isWebGLAvailable()) {
+  // Initialize your Three.js scene
+} else {
+  // Show a fallback message or image
+  document.body.appendChild(WEBGL.getWebGLErrorMessage());
+}
 
 const ProfileText = ({ visible, titleId }) => (
   <>
