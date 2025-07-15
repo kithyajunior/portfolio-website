@@ -253,10 +253,10 @@ export const ProfileWithResume = (props) => {
                 <li key={a}><Text as="span">{a}</Text></li>
               ))}</ul>
 
-              <Heading level={4} as="h3">Certifications</Heading>
+              {/* <Heading level={4} as="h3">Certifications</Heading>
               <ul>{certifications.map(c => (
                 <li key={c}><Text as="span">{c}</Text></li>
-              ))}</ul>
+              ))}</ul> */}
 
               <Heading level={4} as="h3">Languages</Heading>
               <ul>{languages.map(l => (
