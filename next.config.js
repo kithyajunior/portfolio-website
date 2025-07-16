@@ -2,9 +2,9 @@ module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
-  output: 'export', // ✅ valid option
+  output: 'export',
   images: {
-    unoptimized: true,  // needed for `next export` with <Image>
+    unoptimized: true,
   },
   webpack(config, { isServer }) {
     // Run custom scripts
