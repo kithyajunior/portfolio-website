@@ -2,7 +2,7 @@ module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
-  output: 'standalone', // ✅ valid option
+  output: 'export', // ✅ valid option
   images: {
     unoptimized: true,  // needed for `next export` with <Image>
   },
