@@ -10,7 +10,7 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200
 
 [build.environment]
-  NETLIFY_NEXT_PLUGIN_SKIP = "true" 
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
