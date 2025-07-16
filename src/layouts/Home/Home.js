@@ -8,6 +8,7 @@ import styles from './Home.module.css';
 import liveapp from '../../assets/liveapp.jpg';
 import campus from '../../assets/campus.jpg';
 import bakongApp from '../../assets/bakong.jpg';
+import camboTicket from '../../assets/cambo-ticket.jpg'; // Add this line if you have an image, otherwise use a placeholder
 
 const disciplines = [
   'Passionate',
@@ -24,10 +25,11 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -111,6 +113,18 @@ export const Home = () => {
         buttonLink="https://apps.apple.com/kh/app/bakong/id1440829141"
         image={bakongApp}
         imageAlt="Bakong Mini Service screenshot"
+      />
+      <ProjectSummary
+        id="project-4"
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Cambo Ticket"
+        description={"Platform: iOS (Swift, SwiftUI), Android, Web\n\nCambo Ticket is a nationwide bus, taxi, ferry booking app that enables users to search, reserve, and purchase tickets across Cambodia."}
+        buttonText="View project"
+        buttonLink="#"
+        image={camboTicket}
+        imageAlt="Cambo Ticket app screenshot"
       />
       <ProfileWithResume
         sectionRef={details}
