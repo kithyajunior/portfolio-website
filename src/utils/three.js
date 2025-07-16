@@ -1,4 +1,4 @@
-import { Cache, TextureLoader, WebGLRenderer } from 'three';
+import { Cache, TextureLoader } from 'three';
 import { DRACOLoader, GLTFLoader } from 'three-stdlib';
 
 // Enable caching for all loaders
@@ -32,9 +32,7 @@ export const isWebGLAvailable = () => {
     const loseContext = gl.getExtension('WEBGL_lose_context');
     loseContext?.loseContext();
 
-    // Attempt to create a renderer to ensure context creation doesn't fail
-    const renderer = new WebGLRenderer({ canvas });
-    renderer.dispose();
+    // If we could create a WebGL context the environment supports WebGL
 
     return true;
   } catch {
