@@ -51,6 +51,7 @@ import {
   modelLoader,
   removeLights,
   textureLoader,
+  isWebGLAvailable,
 } from 'utils/three';
 import { throttle } from 'utils/throttle';
 import styles from './Earth.module.css';
@@ -188,6 +189,11 @@ export const Earth = ({
   }, [inViewport]);
 
   useEffect(() => {
+    if (!isWebGLAvailable()) {
+      console.warn('WebGL not supported');
+      return;
+    }
+
     mounted.current = true;
     const { innerWidth, innerHeight } = window;
 
@@ -196,7 +202,6 @@ export const Earth = ({
       antialias: false,
       alpha: true,
       powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
     });
     renderer.current.setPixelRatio(1);
     renderer.current.outputEncoding = sRGBEncoding;

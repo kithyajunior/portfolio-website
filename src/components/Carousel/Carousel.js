@@ -16,7 +16,7 @@ import {
 } from 'three';
 import { resolveSrcFromSrcSet } from 'utils/image';
 import { cssProps } from 'utils/style';
-import { cleanRenderer, cleanScene, textureLoader } from 'utils/three';
+import { cleanRenderer, cleanScene, textureLoader, isWebGLAvailable } from 'utils/three';
 import styles from './Carousel.module.css';
 import fragment from './carouselFragment.glsl';
 import vertex from './carouselVertex.glsl';
@@ -68,13 +68,17 @@ export const Carousel = ({ width, height, images, placeholder, ...rest }) => {
   }, [dragging]);
 
   useEffect(() => {
+    if (!isWebGLAvailable()) {
+      console.warn('WebGL not supported');
+      return;
+    }
+
     const cameraOptions = [width / -2, width / 2, height / 2, height / -2, 1, 1000];
     renderer.current = new WebGLRenderer({
       canvas: canvas.current,
       antialias: false,
       alpha: true,
       powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
     });
     camera.current = new OrthographicCamera(...cameraOptions);
     scene.current = new Scene();

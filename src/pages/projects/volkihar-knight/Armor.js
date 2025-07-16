@@ -24,7 +24,7 @@ import {
 } from 'three';
 import { degToRad } from 'three/src/math/MathUtils';
 import { classes, cssProps, msToNum, numToMs } from 'utils/style';
-import { cleanRenderer, cleanScene, modelLoader, removeLights } from 'utils/three';
+import { cleanRenderer, cleanScene, modelLoader, removeLights, isWebGLAvailable } from 'utils/three';
 import styles from './Armor.module.css';
 
 const rotationSpringConfig = {
@@ -56,6 +56,11 @@ export const Armor = ({
   const rotationY = useSpring(0, rotationSpringConfig);
 
   useEffect(() => {
+    if (!isWebGLAvailable()) {
+      console.warn('WebGL not supported');
+      return;
+    }
+
     const { clientWidth, clientHeight } = container.current;
 
     renderer.current = new WebGLRenderer({
@@ -63,7 +68,6 @@ export const Armor = ({
       alpha: true,
       antialias: false,
       powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
     });
 
     renderer.current.setPixelRatio(2);

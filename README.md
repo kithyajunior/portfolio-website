@@ -30,6 +30,20 @@ To create a production build:
 npm run build
 ```
 
+### Environment variables
+
+The site relies on a couple of public environment variables that are injected at
+build time:
+
+```
+NEXT_PUBLIC_WEBSITE_URL=<your site url>
+NEXT_PUBLIC_API_URL=<your API endpoint>
+```
+
+When deploying to Netlify or another provider make sure these variables are set
+in the build environment. If they are missing the runtime fetch requests and
+meta tags may fail.
+
 ## Deployment
 
 I've set up the site using AWS for hosting and serverless functions. You'll need an AWS account and the AWS CLI installed in order to deploy.
