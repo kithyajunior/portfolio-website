@@ -1,4 +1,4 @@
-# Kosal Pen Portfolio
+# Meang Atithkithya Portfolio
 
 [![Site preview](/public/site-preview.png)](https://kosalpen.com)
 

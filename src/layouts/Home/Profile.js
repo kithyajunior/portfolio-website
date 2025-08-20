@@ -98,7 +98,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Kosal Pen profile photo"
+                  alt="Meang Atithkithya profile photo"
                 />
                 <svg
                   aria-hidden="true"
@@ -206,12 +206,12 @@ export const ProfileWithResume = (props) => {
                 placeholder={profileImgPlaceholder}
                 srcSet={[profileImg, profileImgLarge]}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 160px`}
-                alt="Kosal Pen profile photo"
+                alt="Meang Atithkithya profile photo"
                 className={styles.resumeAvatar}
               />
             </div>
             <div className={styles.resumeHeaderText}>
-              <Heading level={2} as="h2" className={styles.resumeName}>Kosal Pen</Heading>
+              <Heading level={2} as="h2" className={styles.resumeName}>Meang Atithkithya</Heading>
               <div className={styles.resumeTitle}>Lead iOS Developer @ Wonderpass</div>
               <div className={styles.resumeContact}>
                 <Link href="mailto:kosalpen99@gmail.com">kosalpen99@gmail.com</Link> |
