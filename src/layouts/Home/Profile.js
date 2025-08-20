@@ -24,11 +24,10 @@ const ProfileText = ({ visible, titleId }) => (
       iOS Developer @ ACLEDA Bank PLC.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      <Link href="mailto:kosalpen99@gmail.com">kosalpen99@gmail.com</Link> |
-      <Link href="tel:+85512898339">+855 128 98339</Link> |
-      <Link href="https://www.linkedin.com/in/kosal-pen-752962128" target="_blank">LinkedIn</Link> |
-      <Link href="https://medium.com/@kosalpen99" target="_blank">Medium</Link> |
-      <Link href="https://github.com/kosalpen11" target="_blank">GitHub</Link>
+      <Link href="mailto:m.atithkithya@gmail.com">m.atithkithya@gmail.com</Link> |
+      <Link href="tel:+85599898963">+855 99 898 963</Link> |
+      <Link href="https://www.linkedin.com/in/meang-atithkithya-3aa011249" target="_blank">LinkedIn</Link> |
+      <Link href="https://github.com/kithyajunior" target="_blank">GitHub</Link>
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
     Accomplished and hands-on Lead iOS Developer
@@ -212,20 +211,21 @@ export const ProfileWithResume = (props) => {
             </div>
             <div className={styles.resumeHeaderText}>
               <Heading level={2} as="h2" className={styles.resumeName}>Meang Atithkithya</Heading>
-              <div className={styles.resumeTitle}>Lead iOS Developer @ Wonderpass</div>
+              <div className={styles.resumeTitle}>iOS Developer @ ACLEDA Bank Plc.</div>
               <div className={styles.resumeContact}>
-                <Link href="mailto:kosalpen99@gmail.com">kosalpen99@gmail.com</Link> |
-                <Link href="tel:+85512898339">+855 128 98339</Link> |
-                <Link href="https://www.linkedin.com/in/kosal-pen-752962128" target="_blank">LinkedIn</Link> |
-                <Link href="https://medium.com/@kosalpen99" target="_blank">Medium</Link> |
-                <Link href="https://github.com/kosalpen11" target="_blank">GitHub</Link>
+              <Link href="mailto:m.atithkithya@gmail.com">m.atithkithya@gmail.com</Link> |
+              <Link href="tel:+85599898963">+855 99 898 963</Link> |
+              <Link href="https://www.linkedin.com/in/meang-atithkithya-3aa011249" target="_blank">LinkedIn</Link> |
+              <Link href="https://github.com/kithyajunior" target="_blank">GitHub</Link>
               </div>
             </div>
           </div>
           <div className={styles.resumeGrid}>
             <div>
               <Heading level={4} as="h3">Profile</Heading>
-              <Text as="p">Passionate Lead iOS Developer with 8+ years of experience architecting modular, high-performance mobile apps. Driving 25% engagement lifts through context-aware features, 99.8% data consistency via offline sync, and sub-second transaction flows. Mentored engineers, built open-source Swift packages, and shipped 10+ App Store–approved apps with 4.7★ average ratings.</Text>
+              <Text as="p">Self-motivated strong organized, reliable, dedicated, hardworking developer. Open to new challenges that
+require good solutions and best practices. Hardworking, Responsible, Honest, Creative, Energetic, and
+Dependable are what I respect and follow.</Text>
 
               <Heading level={4} as="h3">Experience</Heading>
               {experiences.map(exp => (
