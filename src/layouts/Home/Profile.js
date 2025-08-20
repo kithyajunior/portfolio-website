@@ -26,6 +26,7 @@ const ProfileText = ({ visible, titleId }) => (
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       <Link href="mailto:m.atithkithya@gmail.com">m.atithkithya@gmail.com</Link> |
       <Link href="tel:+85599898963">+855 99 898 963</Link> |
+      <Link href="tel:+85570868963">+855 70 868 963</Link> |
       <Link href="https://www.linkedin.com/in/meang-atithkithya-3aa011249" target="_blank">LinkedIn</Link> |
       <Link href="https://github.com/kithyajunior" target="_blank">GitHub</Link>
     </Text>
@@ -123,55 +124,69 @@ export const ProfileWithResume = (props) => {
 
   const experiences = [
     {
-      title: 'Lead iOS Developer',
-      company: 'Wonderpass',
-      period: 'Oct 2021 – Present',
+      title: 'iOS Develeoper',
+      company: 'ACLEDA Bank Plc.',
+      period: 'Jul 2022 – Present',
       items: [
-        'Led full delivery of Bakong Mini Service (iOS, Android, Web, Backend',
-        'Built a JSBridge layer in WKWebView to integrate native Swift APIs with web UI.',
-        'Led architecture and development of LiveApp, a modular SwiftUI app with dynamic QR resale ticketing, payment calculation, and secure user flows.',
-        'Implemented QR-based facility access control with HMAC-SHA256 validation. ',
-        'Implemented secure hash validation for iframe-based financial transactions',
-        'Developed sync jobs to push local MongoDBdata to cloud using Mongoose CLI + cron.',
-        'Mentored mobile team members and led architecture decisions and Agile ceremonies.'
+        'Design and develop applications for the native iOS platform.',
+        'Ensure application performance, quality, and responsiveness.',
+        'Have a basic understanding of Git, both in Xcode and the command line.',
+        'Work with Swift and Cocoa Touch.',
+        'Experience integrating third-party libraries.',
+        'Connect iOS applications to backend services using RESTful APIs.',
+        'Build mobile apps and integrate them with backend APIs.',
+        'Modernize and improve existing code based on current development standards.',
+        'Design intuitive graphical user interfaces to enhance user experience.',
+        'Have a foundational understanding of UI/UX design.',
+        'Collaborate with the team to define, design, and implement new features.',
+        'Identify and resolve bottlenecks and bugs.',
+        'Integrated the ACLEDA Bank Mobile app with CSX Trade.',
+        'Integrated the ACLEDA Bank Mobile app with offline QR functionality.',
+        'Integrated the ACLEDA Bank Mobile app with P2P Chat',
+        'Integrated the ACLEDA Bank Mobile app with a Chat Bot',
+        'Integrated the ACLEDA Bank Mobile app with notifications.',
+        'Integrated the ACLEDA Bank Mobile app with deep linking.',
+        'Integrated the ACLEDA Bank Mobile app with a feedback feature.',
+        'Updated some part of the Home Screen in the ACLEDA Mobile app.',
+        'Added many features to the ACLEDA Mobile app.',
+        'Created custom base components for the ACLEDA Bank Mobile app.',
+        'Provided Swift programming training to ACLEDA Bank’s new staff.',
+        'Fixed bugs in the ACLEDA Mobile Bank app.'
       ]
     },
     {
-      title: 'Lead iOS Developer',
-      company: 'Spark',
-      period: 'Oct 2017 – Sep 2021',
+      title: 'Billing Executive',
+      company: 'South East Asia Telecom Cambodia',
+      period: 'Nov 2021 – Jul 2022',
       items: [
-        'Delivered and maintained production iOS apps in the transport and logistics domain.',
-        'Migrated legacy code to modular MVVM structure, improving testability and long-term maintenance.',
-        'Worked closely with backend engineers to align API contracts and release schedules.',
-        'Acted as onboarding lead for junior developers and new team hires.'
+        'Backup Data',
+        'SQL Script generator',
+        'Generate report',
+        'Monitor user'
       ]
     },
     {
-      title: 'Junior iOS Developer',
-      company: 'Pathmazing',
-      period: 'Dec 2016 – Oct 2017',
+      title: 'Software Developer',
+      company: 'Forval Cambodia',
+      period: 'Jul 2020 – Nov 2021',
       items: [
-        'Developed UIKit-based iOS apps with polished UI components.',
-        'Prototyped Estimote beacon features in collaboration with UX designers.',
-        'Streamlined Git workflows and automated builds, reducing integration issues by 20%.'
+        'Design and build desktop application (Inventory Management System, POS Management System, Payroll Management System, Attendent Management System, Fixed Asset Management System and Parking Management System ) & Cross platform project (POS Management Systeme).',
+        'Troubleshoot and debug issues.',
+        'Optimize for performance and efficiency.',
+        'Stay updated on industry trends.',
+        'Support Customer.'
       ]
     }
   ];
 
   const skills = [
-    'Swift & SwiftUI',
-    'UIKit',
-    'Resolver (DI)',
-    'Modular Architecture',
-    'MVVM & Coordinator Pattern',
+    'Having strong knowledge of C#, Oracle, SQL server, MySQL, Swift , Constraints AutoLayout and UI/UX Design .',
+    'Having fairly knowledge of C/C++, VB.Net, HTML, CSS, JQuery, JavaScript,TypeScript, and Java.',
+    'Good at Microsoft Office: Microsoft Word, Excel.',
+    'Fast learning for new technology and Computer programming.',
+    'Good at surfing internet.',
     'REST & gRPC APIs',
     'Performance Optimization',
-    'MongoDB & Mongoose',
-    'Node.js & NestJS',
-    'Docker & Kubernetes (AWS EKS)',
-    'CI/CD (Bitbucket Pipelines)',
-    'Payment Integrations on Mini Services (Bakong, Wing Bank)'
   ];
 
   const education = 'B.Sc. in Computer Science, Royal University of Phnom Penh (2014 – 2018)';
@@ -215,6 +230,7 @@ export const ProfileWithResume = (props) => {
               <div className={styles.resumeContact}>
               <Link href="mailto:m.atithkithya@gmail.com">m.atithkithya@gmail.com</Link> |
               <Link href="tel:+85599898963">+855 99 898 963</Link> |
+              <Link href="tel:+85570868963">+855 70 868 963</Link> |
               <Link href="https://www.linkedin.com/in/meang-atithkithya-3aa011249" target="_blank">LinkedIn</Link> |
               <Link href="https://github.com/kithyajunior" target="_blank">GitHub</Link>
               </div>
