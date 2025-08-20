@@ -203,8 +203,9 @@ export const ProfileWithResume = (props) => {
   const languages = ['Khmer (Native)', 'English (Professional Working Proficiency)'];
 
   const references = [
-    { name: 'Mr. Tuy Chandara', role: 'CEO @ Wonderpass', contact: '(+855 99 474 942)' },
-    { name: 'Mr. Sopheak Te', role: 'Lead Developer @ Wonderpass', contact: '(+855 96 543 5596 | sopheak4kh@gmail.com)' }
+    { name: 'Mr. Ron Vanda', role: 'Special Project Manager @ Forval Cambodia', contact: '(+855 77 929 207)' },
+    { name: 'Mr. Khim Putheara', role: 'Billing Manager @ South East Asia Telecom Cambodia', contact: '(+855 18 970 0803)' },
+    { name: 'Mr. Phorn Kimsiek', role: 'Senior Software Engineer @ ACLEDA Bank Plc.', contact: '(+855 12345666)' }
   ];
 
   return (
