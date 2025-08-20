@@ -18,10 +18,10 @@ import { useTheme } from 'components/ThemeProvider';
 const ProfileText = ({ visible, titleId }) => (
   <>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      Kosal Pen
+      Meang Atithkithya
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Lead iOS Developer @ Wonderpass
+      iOS Developer @ ACLEDA Bank PLC.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       <Link href="mailto:kosalpen99@gmail.com">kosalpen99@gmail.com</Link> |
