@@ -31,20 +31,7 @@ const ProfileText = ({ visible, titleId }) => (
       <Link href="https://github.com/kithyajunior" target="_blank">GitHub</Link>
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Accomplished and hands-on Lead iOS Developer
-with over 8 years of experience delivering scalable,
-modular, and high-performance iOS applications.
-Expert in Swift, SwiftUI, and app architecture using
-SPM, Resolver DI, and reusable UI modules. Proven
-ability to lead feature delivery end-to-end, from
-planning and architecture to code
-implementation, CI/CD, and App Store
-deployment. Skilled at managing cross-platform
-teams and integrating with backend systems,
-including secure native-web communication, QR
-resale, and payment flows. Passionate about clean
-code, great UX, and mentoring developers to build
-quality mobile products.
+    Hi, I’m Meang Atithkithya, a passionate iOS Developer from Phnom Penh who loves turning ideas into smooth, intuitive mobile experiences. At ACLEDA Bank Plc., I’ve worked on the ACLEDA Mobile app, bringing to life features like CSX Trade, offline QR payments, P2P Chat, and more to make banking smarter and easier. With a strong foundation in Swift, C#, SQL, and UI/UX design, I enjoy crafting apps that are not only functional but also delightful to use. My journey also includes building management systems and handling backend tasks, giving me a well-rounded perspective on development. I’m always curious, always learning, and always pushing myself to improve. When I’m not coding, you’ll probably find me exploring new tech, reading, gaming, or sharpening my programming skills.
     </Text>
   </>
 );
@@ -128,10 +115,10 @@ export const ProfileWithResume = (props) => {
       company: 'ACLEDA Bank Plc.',
       period: 'Jul 2022 – Present',
       items: [
-        'Design and develop applications for the native iOS platform.',
-        'Ensure application performance, quality, and responsiveness.',
+        'Designed and developed applications for iOS.',
+        'Built and improved mobile apps connected to backend RESTful APIs.',
         'Have a basic understanding of Git, both in Xcode and the command line.',
-        'Work with Swift and Cocoa Touch.',
+        'Designed intuitive UIs with Swift and Cocoa Touch.',
         'Experience integrating third-party libraries.',
         'Connect iOS applications to backend services using RESTful APIs.',
         'Build mobile apps and integrate them with backend APIs.',
@@ -140,18 +127,10 @@ export const ProfileWithResume = (props) => {
         'Have a foundational understanding of UI/UX design.',
         'Collaborate with the team to define, design, and implement new features.',
         'Identify and resolve bottlenecks and bugs.',
-        'Integrated the ACLEDA Bank Mobile app with CSX Trade.',
-        'Integrated the ACLEDA Bank Mobile app with offline QR functionality.',
-        'Integrated the ACLEDA Bank Mobile app with P2P Chat',
-        'Integrated the ACLEDA Bank Mobile app with a Chat Bot',
-        'Integrated the ACLEDA Bank Mobile app with notifications.',
-        'Integrated the ACLEDA Bank Mobile app with deep linking.',
-        'Integrated the ACLEDA Bank Mobile app with a feedback feature.',
-        'Updated some part of the Home Screen in the ACLEDA Mobile app.',
-        'Added many features to the ACLEDA Mobile app.',
+        'Integrated ACLEDA Bank Mobile app with CSX Trade, offline QR, P2P Chat, Chat Bot, notifications, deep linking, and feedback feature.',
         'Created custom base components for the ACLEDA Bank Mobile app.',
-        'Provided Swift programming training to ACLEDA Bank’s new staff.',
-        'Fixed bugs in the ACLEDA Mobile Bank app.'
+        'Provided Swift training to new staff.',
+        'Fixed bugs and modernized existing code.'
       ]
     },
     {
@@ -159,10 +138,10 @@ export const ProfileWithResume = (props) => {
       company: 'South East Asia Telecom Cambodia',
       period: 'Nov 2021 – Jul 2022',
       items: [
-        'Backup Data',
+        'Managed data backups',
         'SQL Script generator',
         'Generate report',
-        'Monitor user'
+        'User monitoring'
       ]
     },
     {
