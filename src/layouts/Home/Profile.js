@@ -168,12 +168,14 @@ export const ProfileWithResume = (props) => {
     'Performance Optimization',
   ];
 
-  const education = 'B.Sc. in Computer Science, Royal University of Phnom Penh (2014 – 2018)';
-  const achievements = [
-    'Delivered LiveApp and Bakong Mini Service across mobile and web with secure, real-time communication',
-    'Implemented JSBridge-based native-web sync for payments and iframe control',
-    'Built modular Swift packages adopted across internal app projects',
-    'Shipped 10+ App Store apps with 100% approval and 4.7★ average user rating.'
+  // const education = 'B.Sc. in Computer Science, Royal University of Phnom Penh (2014 – 2018)';
+  const education = [
+    'Secondary School at Chaktomuk, Phnom Penh (2011 – 2014)',
+    'General English Program, Western International School, Phnom Penh (2014 – 2016)',
+    'High School at Preah Sisowath, Phnom Penh (2015 – 2018)',
+    'B.Sc. in English for Bussiness for Communicate, Western University, Phnom Penh (2019 – 2020)',
+    'Diploma in Software Development, IT STEP ACADEMY, Phnom Penh (2019 – 2022)',
+    'B.Sc. in Computer Science, ACLEDA University of Business, Phnom Penh (2022 – Present)',
   ];
 
   const certifications = [
@@ -242,9 +244,6 @@ Dependable are what I respect and follow.</Text>
               ))}</ul>
 
               <Heading level={4} as="h3">Education</Heading>
-              <Text as="p">{education}</Text>
-
-              <Heading level={4} as="h3">Achievements</Heading>
               <ul>{achievements.map(a => (
                 <li key={a}><Text as="span">{a}</Text></li>
               ))}</ul>
