@@ -186,7 +186,7 @@ export const ProfileWithResume = (props) => {
   const references = [
     { name: 'Mr. Ron Vanda', role: 'Special Project Manager @ Forval Cambodia', contact: '(+855 77 929 207)' },
     { name: 'Mr. Khim Putheara', role: 'Billing Manager @ South East Asia Telecom Cambodia', contact: '(+855 18 970 0803)' },
-    { name: 'Mr. Phorn Kimsiek', role: 'Senior Software Engineer @ ACLEDA Bank Plc.', contact: '(+855 12345666)' }
+    { name: 'Mr. Phorn Kimsiek', role: 'Senior Software Engineer @ ACLEDA Bank Plc.', contact: '(+855 xxxxxxxxxx)' }
   ];
 
   return (
