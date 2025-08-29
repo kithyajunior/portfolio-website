@@ -81,7 +81,7 @@ export const Home = () => {
         title="Forval Cambodia"
         description="Forval (Cambodia) is a JAPANESE COMPANY who provides «ONE STOP» and «TOTAL» services to our beloved customer in CAMBODIA!"
         buttonText="View Project"
-        buttonLink="https://apps.apple.com/kh/app/live-by-wonderpass/id1561469242"
+        buttonLink=""
         image={liveapp}
         imageAlt="Forval Cambodia app screenshot"
       />
