@@ -94,37 +94,13 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Campus App"
-        description="A modern campus management and student engagement platform. Supporting real-time notifications, event management, and seamless integrations."
-        buttonText="View project"
-        buttonLink="https://campus.wonderpass.asia"
+        title="ACLEDA Bank Plc."
+        description="ACLEDA mobile is a FinTech Application running on Smart Phone, enabling customers to do banking transactions from anywhere, anytime."
+        buttonText="View on App Store"
+        buttonLink="https://apps.apple.com/tw/app/acleda-mobile/id1196285236"
         alternate
         image={campus}
         imageAlt="Campus App screenshot"
-      />
-      <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="Bakong Mini Service"
-        description="A cross-platform payment and mini service solution, integrating Bakong, Wing Bank, and more. Led backend and mobile teams, managed CI/CD, and engineered MongoDB sync workflows."
-        buttonText="View project"
-        buttonLink="https://apps.apple.com/kh/app/bakong/id1440829141"
-        image={bakongApp}
-        imageAlt="Bakong Mini Service screenshot"
-      />
-      <ProjectSummary
-        id="project-4"
-        sectionRef={projectFour}
-        visible={visibleSections.includes(projectFour.current)}
-        index={4}
-        title="Cambo Ticket"
-        description={"Platform: iOS (Swift, SwiftUI), Android, Web\n\nCambo Ticket is a nationwide bus, taxi, ferry booking app that enables users to search, reserve, and purchase tickets across Cambodia."}
-        buttonText="View project"
-        buttonLink="#"
-        image={camboTicket}
-        imageAlt="Cambo Ticket app screenshot"
       />
       <ProfileWithResume
         sectionRef={details}
