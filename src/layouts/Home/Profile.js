@@ -244,7 +244,7 @@ Dependable are what I respect and follow.</Text>
               ))}</ul>
 
               <Heading level={4} as="h3">Education</Heading>
-              <ul>{achievements.map(a => (
+              <ul>{education.map(a => (
                 <li key={a}><Text as="span">{a}</Text></li>
               ))}</ul>
 
