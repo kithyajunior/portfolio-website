@@ -82,12 +82,12 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Live. by Wonderpass"
-        description="A super app for events, ticketing, and digital experiences. Architected core features as reusable SwiftUI modules, and led a team to deliver seamless cross-platform experiences."
-        buttonText="View on App Store"
+        title="Forval Cambodia"
+        description="Forval (Cambodia) is a JAPANESE COMPANY who provides «ONE STOP» and «TOTAL» services to our beloved customer in CAMBODIA!"
+        buttonText="View Project"
         buttonLink="https://apps.apple.com/kh/app/live-by-wonderpass/id1561469242"
         image={liveapp}
-        imageAlt="Live. by Wonderpass app screenshot"
+        imageAlt="Forval Cambodia app screenshot"
       />
       <ProjectSummary
         id="project-2"
