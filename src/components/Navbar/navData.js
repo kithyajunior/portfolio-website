@@ -26,6 +26,6 @@ export const socialLinks = [
   // },
   {
     label: 'Github',
-    url: 'https://github.com/kosalpen11',
+    url: 'https://github.com/kithyajunior',
     icon: 'github',
   },];
